@@ -93,9 +93,9 @@ Processes data in a structured **pipeline**: forecast → analyze → recommend,
 
 <div align="center">
   
-![Sequential Pattern](Images/sequential_agent_pattern.png)
+![Sequential Pattern](Images/loop_agent_pattern.png)
   
-*SequentialAgent: Ordered processing pipeline (Forecast → Analyze → Recommend)*
+*SequentialAgent: Ordered processing pipeline*
 
 </div>
 
@@ -104,9 +104,9 @@ Implements **retry logic** for critical alerts, ensuring delivery confirmation b
 
 <div align="center">
   
-![Loop Pattern](Images/loop_agent_pattern.png)
+![Loop Pattern](Images/sequential_agent_pattern.png)
   
-*LoopAgent: Alert delivery with retry mechanism (max 3 iterations)*
+*LoopAgent: Alert delivery with retry mechanism*
 
 </div>
 
