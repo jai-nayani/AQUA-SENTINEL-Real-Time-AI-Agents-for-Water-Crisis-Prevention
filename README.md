@@ -4,9 +4,9 @@
 
 <div align="center">
   
-  ![Hero Image](Images/hero_image_clean.png)
+  ![Project Cover](Images/hero_image_clean.png)
   
-  **Kaggle AI Agents Capstone 2025** | **Track: Agents for Good**
+  *AQUA SENTINEL - Kaggle AI Agents Capstone 2025 | Track: Agents for Good*
   
   [![Kaggle](https://img.shields.io/badge/Kaggle-Competition-blue)](https://www.kaggle.com)
   [![Python](https://img.shields.io/badge/Python-3.11+-green)](https://www.python.org)
@@ -28,7 +28,7 @@ In 2023, the Horn of Africa faced its worst drought in 40 years. **20 million pe
   
   ![Problem Solution](Images/problem_solution_comparison.png)
   
-  *The Problem: Siloed data vs. AQUA SENTINEL Solution: Coordinated AI agents*
+  *The Problem vs. AQUA SENTINEL Solution*
   
 </div>
 
@@ -50,9 +50,9 @@ In 2023, the Horn of Africa faced its worst drought in 40 years. **20 million pe
 
 <div align="center">
   
-  ![Architecture](Images/architecture_diagram.png)
+  ![Architecture](Images/architecture_infographic.png)
   
-  *System Architecture: Hydro Orchestrator coordinating Sentinel (ParallelAgent), Guardian (SequentialAgent), and Responder (LoopAgent)*
+  *System Architecture: Hydro Orchestrator with Parallel, Sequential, and Loop agent patterns*
   
 </div>
 
@@ -84,7 +84,7 @@ Monitors multiple data sources **simultaneously**—weather (Open-Meteo), water 
   
 ![Parallel Pattern](Images/parallel_agent_pattern.png)
   
-*ParallelAgent: Three agents running concurrently to fetch data from NASA, USGS, and Weather APIs*
+*ParallelAgent: Concurrent Data Collection - Multiple sources fetched simultaneously*
 
 </div>
 
@@ -93,9 +93,9 @@ Processes data in a structured **pipeline**: forecast → analyze → recommend,
 
 <div align="center">
   
-![Sequential Pattern](Images/sequential_agent_pattern.png)
+![Sequential Pattern](Images/loop_agent_pattern.png)
   
-*SequentialAgent: Ordered processing where analysis follows forecasting*
+*SequentialAgent: Ordered processing pipeline*
 
 </div>
 
@@ -104,9 +104,9 @@ Implements **retry logic** for critical alerts, ensuring delivery confirmation b
 
 <div align="center">
   
-![Loop Pattern](Images/loop_agent_pattern.png)
+![Loop Pattern](Images/sequential_agent_pattern.png)
   
-*LoopAgent: Alert delivery with verification loop*
+*LoopAgent: Alert delivery with retry mechanism*
 
 </div>
 
@@ -124,7 +124,7 @@ Implements **retry logic** for critical alerts, ensuring delivery confirmation b
   
   ![Data Sources](Images/data_sources_visual.png)
   
-  *Four real-time data sources: NASA EONET (disasters), USGS (water levels), Open-Meteo (weather), REST Countries (geography)*
+  *Real-time data integration: Weather, Water Levels, Disasters, and Country Data with Aqua Sentinel at the center*
   
 </div>
 
@@ -145,7 +145,15 @@ AQUA SENTINEL achieves **96% average score** across 4 evaluation dimensions:
   
 ![Evaluation](Images/evaluation_framework.png)
 
-*Multi-dimensional evaluation: Validity (25%), Relevance (35%), Freshness (20%), Quality (20%)*
+*Evaluation Dimensions: Multi-dimensional Scoring Framework*
+
+</div>
+
+<div align="center">
+  
+![Agent Patterns Comparison](Images/agent_patterns_comparison.png)
+
+*Agent Patterns: Parallel vs Sequential vs Loop workflows*
 
 </div>
 
@@ -229,7 +237,15 @@ This project evolved from an initial serverless architecture vision to a focused
   
 ![Project Timeline](Images/project_journey_timeline.png)
 
-*Development journey: From serverless vision to notebook-based ADK implementation*
+*Project Evolution: Development timeline and milestones*
+
+</div>
+
+<div align="center">
+  
+![Hydro Orchestrator](Images/hydro_orchestrator_diagram.png)
+
+*Hydro Orchestrator Architecture*
 
 </div>
 
