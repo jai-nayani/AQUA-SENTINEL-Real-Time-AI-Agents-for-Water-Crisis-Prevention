@@ -28,6 +28,8 @@ In 2023, the Horn of Africa faced its worst drought in 40 years. **20 million pe
   
   ![Problem Solution](Images/problem_solution_comparison.png)
   
+  *The Problem: Siloed data vs. AQUA SENTINEL Solution: Coordinated AI agents*
+  
 </div>
 
 ---
@@ -35,10 +37,10 @@ In 2023, the Horn of Africa faced its worst drought in 40 years. **20 million pe
 ## ⚡ Key Features
 
 ### 🚀 Real-Time Data Integration
-- **NASA EONET**: Global disaster monitoring (daily updates)
-- **USGS Water Services**: Real-time water level sensors
-- **Open-Meteo API**: Weather forecasts (updated every 15 minutes)
-- **REST Countries**: Geographic and demographic data
+- **NASA EONET**: Global natural disaster events (floods, droughts, severe storms) - daily updates
+- **USGS Water Services**: Real-time water level sensors for US rivers (gage height, discharge rates)
+- **Open-Meteo API**: Weather forecasts and current conditions (updated every 15 minutes)
+- **REST Countries**: Geographic and demographic data for alert targeting
 
 ### 🤖 Multi-Agent Architecture
 - **Hydro Orchestrator**: Intelligent query routing and synthesis
@@ -50,7 +52,7 @@ In 2023, the Horn of Africa faced its worst drought in 40 years. **20 million pe
   
   ![Architecture](Images/architecture_diagram.png)
   
-  *System Architecture: Four Agent Patterns Working in Harmony*
+  *System Architecture: Hydro Orchestrator coordinating Sentinel (ParallelAgent), Guardian (SequentialAgent), and Responder (LoopAgent)*
   
 </div>
 
@@ -76,19 +78,37 @@ In 2023, the Horn of Africa faced its worst drought in 40 years. **20 million pe
 ## 🏗️ Agent Patterns
 
 ### ParallelAgent: Sentinel
-Monitors multiple data sources simultaneously—weather, water levels, and disasters—enabling comprehensive real-time assessment.
+Monitors multiple data sources **simultaneously**—weather (Open-Meteo), water levels (USGS), and disasters (NASA EONET)—enabling comprehensive real-time assessment.
 
+<div align="center">
+  
 ![Parallel Pattern](Images/parallel_agent_pattern.png)
+  
+*ParallelAgent: Three agents running concurrently to fetch data from NASA, USGS, and Weather APIs*
+
+</div>
 
 ### SequentialAgent: Guardian
-Processes data in a structured pipeline: forecast → analyze → recommend, ensuring logical flow and dependency handling.
+Processes data in a structured **pipeline**: forecast → analyze → recommend, ensuring logical flow and dependency handling.
 
+<div align="center">
+  
 ![Sequential Pattern](Images/sequential_agent_pattern.png)
+  
+*SequentialAgent: Ordered processing where analysis follows forecasting*
+
+</div>
 
 ### LoopAgent: Responder
-Implements retry logic for critical alerts, ensuring delivery confirmation before completion.
+Implements **retry logic** for critical alerts, ensuring delivery confirmation before completion (max 3 iterations).
 
+<div align="center">
+  
 ![Loop Pattern](Images/loop_agent_pattern.png)
+  
+*LoopAgent: Alert delivery with verification loop*
+
+</div>
 
 ---
 
@@ -103,6 +123,8 @@ Implements retry logic for critical alerts, ensuring delivery confirmation befor
 <div align="center">
   
   ![Data Sources](Images/data_sources_visual.png)
+  
+  *Four real-time data sources: NASA EONET (disasters), USGS (water levels), Open-Meteo (weather), REST Countries (geography)*
   
 </div>
 
@@ -119,7 +141,13 @@ AQUA SENTINEL achieves **96% average score** across 4 evaluation dimensions:
 
 **Status**: 4/4 tests passed | Evaluation Successful ✅
 
+<div align="center">
+  
 ![Evaluation](Images/evaluation_framework.png)
+
+*Multi-dimensional evaluation: Validity (25%), Relevance (35%), Freshness (20%), Quality (20%)*
+
+</div>
 
 ---
 
@@ -135,18 +163,22 @@ pip install google-genai google-adk requests
 ```
 
 ### Usage
+Open the notebook and run the cells. Example queries:
+
 ```python
-from aqua_sentinel import query_aqua_sentinel
-
-# Query current water situation
+# Regional water situation
 response = await query_aqua_sentinel(
-    "What is the current water situation in California?"
+    "What is the current water situation in California? Get real-time data from all sources."
 )
 
-# Monitor global disasters
+# Global disaster monitoring
 response = await query_aqua_sentinel(
-    "What natural disasters are currently happening globally?"
+    "What natural disasters are currently happening globally? Focus on water-related events."
 )
+
+# Emergency alerts
+response = await query_aqua_sentinel(
+    "Send an emergency drought alert to Kenya. Groundwater levels are critically low."
 ```
 
 ---
@@ -179,6 +211,8 @@ Traditional dashboards **display** data. AQUA SENTINEL agents **interpret**, **c
   
   ![Agent Coordination](Images/agent_coordination.png)
   
+  *Intelligent coordination: Hydro Orchestrator delegates queries to specialized agents based on context*
+  
 </div>
 
 ---
@@ -191,7 +225,13 @@ This project evolved from an initial serverless architecture vision to a focused
 - **Rate Limiting**: Mitigated through model selection and delays
 - **Evaluation Consistency**: Addressed with multi-dimensional scoring
 
+<div align="center">
+  
 ![Project Timeline](Images/project_journey_timeline.png)
+
+*Development journey: From serverless vision to notebook-based ADK implementation*
+
+</div>
 
 ---
 
