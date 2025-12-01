@@ -93,7 +93,7 @@ Processes data in a structured **pipeline**: forecast → analyze → recommend,
 
 <div align="center">
   
-![Sequential Pattern](Images/loop_agent_pattern.png)
+![Sequential Pattern](Images/sequential_agent_pattern.png)
   
 *SequentialAgent: Ordered processing pipeline*
 
@@ -104,7 +104,7 @@ Implements **retry logic** for critical alerts, ensuring delivery confirmation b
 
 <div align="center">
   
-![Loop Pattern](Images/sequential_agent_pattern.png)
+![Loop Pattern](Images/hydro_orchestrator_diagram.png)
   
 *LoopAgent: Alert delivery with retry mechanism*
 
@@ -243,7 +243,7 @@ This project evolved from an initial serverless architecture vision to a focused
 
 <div align="center">
   
-![Hydro Orchestrator](Images/hydro_orchestrator_diagram.png)
+![Hydro Orchestrator](Images/loop_agent_pattern.png)
 
 *Hydro Orchestrator Architecture*
 
