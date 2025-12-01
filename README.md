@@ -50,6 +50,14 @@ In 2023, the Horn of Africa faced its worst drought in 40 years. **20 million pe
 
 <div align="center">
   
+![Hydro Orchestrator](Images/loop_agent_pattern.png)
+
+*Hydro Orchestrator Architecture*
+
+</div>
+
+<div align="center">
+  
   ![Architecture](Images/architecture_infographic.png)
   
   *System Architecture: Hydro Orchestrator with Parallel, Sequential, and Loop agent patterns*
@@ -241,13 +249,6 @@ This project evolved from an initial serverless architecture vision to a focused
 
 </div>
 
-<div align="center">
-  
-![Hydro Orchestrator](Images/loop_agent_pattern.png)
-
-*Hydro Orchestrator Architecture*
-
-</div>
 
 ---
 
