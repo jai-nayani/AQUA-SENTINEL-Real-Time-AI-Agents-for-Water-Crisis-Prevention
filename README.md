@@ -324,7 +324,7 @@ The 2023 Horn of Africa drought showed that the problem wasn't lack of informati
 
 <div align="center">
   
-  **Built with 💧 for the Kaggle AI Agents Intensive Capstone**
+  **Built with ❤️ for the Kaggle AI Agents Intensive Capstone**
   
   *Empowering communities with AI-driven water crisis prevention*
   
