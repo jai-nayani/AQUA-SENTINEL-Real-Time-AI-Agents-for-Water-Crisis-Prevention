@@ -50,6 +50,14 @@ In 2023, the Horn of Africa faced its worst drought in 40 years. **20 million pe
 
 <div align="center">
   
+![Hydro Orchestrator](Images/loop_agent_pattern.png)
+
+*Hydro Orchestrator Architecture*
+
+</div>
+
+<div align="center">
+  
   ![Architecture](Images/architecture_infographic.png)
   
   *System Architecture: Hydro Orchestrator with Parallel, Sequential, and Loop agent patterns*
@@ -139,7 +147,7 @@ AQUA SENTINEL achieves **96% average score** across 4 evaluation dimensions:
 - ✅ **Freshness (20%)**: Real-time data indicators
 - ✅ **Quality (20%)**: Response completeness
 
-**Status**: 4/4 tests passed | Evaluation Successful ✅
+**Status**: 8/8 tests passed | Evaluation Successful ✅
 
 <div align="center">
   
@@ -206,6 +214,48 @@ response = await query_aqua_sentinel(
 
 ---
 
+## 🚀 Deployment
+
+AQUA SENTINEL deployment was attempted to **Vertex AI Agent Engine**.
+
+### Deployment Evidence
+
+- **Platform**: Google Cloud - Vertex AI Agent Engine
+- **Project ID**: `aqua-sentinel-480105`
+- **Region**: `us-central1`
+- **Resource ID**: `projects/127921942048/locations/us-central1/reasoningEngines/4347921975016947712`
+- **Staging Bucket**: `gs://aqua-sentinel-staging`
+
+### Deployment Process
+
+1. Created GCP project with $300 free credits
+2. Enabled Vertex AI API
+3. Created Cloud Storage staging bucket
+4. Structured agent code for ADK deployment
+5. Executed `adk deploy agent_engine` command
+
+### Deployment Configuration
+
+```json
+{
+    "min_instances": 0,
+    "max_instances": 1,
+    "resource_limits": {"cpu": "1", "memory": "1Gi"}
+}
+```
+
+<div align="center">
+  
+  ![Deployment Screenshot](Images/deployment_screenshot.png)
+  
+  *Deployment attempt to Vertex AI Agent Engine - Agent Engine resource created but encountered startup issue*
+  
+</div>
+
+> **Note**: The agent was created but encountered a startup issue. See [GCP troubleshooting docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/troubleshooting/deploy) for more information.
+
+---
+
 ## 🎯 Why Agents?
 
 Traditional dashboards **display** data. AQUA SENTINEL agents **interpret**, **correlate**, and **act**:
@@ -241,13 +291,6 @@ This project evolved from an initial serverless architecture vision to a focused
 
 </div>
 
-<div align="center">
-  
-![Hydro Orchestrator](Images/loop_agent_pattern.png)
-
-*Hydro Orchestrator Architecture*
-
-</div>
 
 ---
 
