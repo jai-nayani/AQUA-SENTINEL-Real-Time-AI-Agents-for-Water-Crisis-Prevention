@@ -446,7 +446,7 @@ This means **real-time monitoring completes in seconds**, enabling faster crisis
 
 <div align="center">
   
-  **Built with ❤️ for the Kaggle AI Agents Intensive Capstone**
+  **Built for the Kaggle AI Agents Intensive Capstone**
   
   *Empowering communities with AI-driven water crisis prevention*
   
