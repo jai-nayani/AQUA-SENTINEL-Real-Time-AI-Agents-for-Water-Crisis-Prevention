@@ -39,3 +39,5 @@ Thumbs.db
 *.bak
 *~
 
+Images/backup_*/
+aqua-sentinel-final-enhanced.ipynb
